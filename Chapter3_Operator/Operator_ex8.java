@@ -1,0 +1,13 @@
+package Chapter3_Operator;
+
+public class Operator_ex8 {
+    public static void main(String[] args) {
+        int a = 3;
+        int b = 2;
+        System.out.println(a / b);
+        double d1 = (double) a;
+        double d2 = (double) b;
+        System.out.println(d1 / b);
+        System.out.println(a / d2);
+    }
+}
