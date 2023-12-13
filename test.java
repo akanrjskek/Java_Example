@@ -6,6 +6,6 @@ import java.util.List;
 import java.util.Arrays;
 public class test {
     public static void main(String[] args) throws Exception{
-
+        System.out.println((-1) % 2);
     }
 }
