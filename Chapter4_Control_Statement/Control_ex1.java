@@ -7,6 +7,5 @@ public class Control_ex1 {
 
         if(false)
             System.out.println("if문 실행2");
-            System.out.println("if문 실행3");
     }
 }
