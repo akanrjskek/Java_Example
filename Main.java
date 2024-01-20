@@ -1,11 +1,13 @@
 class A{
-    A(){
-        System.out.println("parent");
+    public String toString(){
+        return "This is A Class";
     }
 }
 
+
 public class Main {
-    public static void main(String[] args) {
-        int a;
+    public static void main(String[] args){
+        A a = new A();
+        System.out.println(a);
     }
 }
