@@ -1,21 +1,26 @@
 package Chaper8_Interface;
 
-abstract class V {
-    abstract void method(); // 추상 메서드
-    V(){
-        System.out.println("This class is V");
+abstract class Tea {
+    abstract void teaName();
+}
+
+class GreenTea extends Tea{
+    void teaName(){
+        System.out.println("GreenTea");
     }
 }
 
-class W extends V{
-    void method(){
-        System.out.println("This class is W");
+class Coffee extends Tea {
+    void teaName(){
+        System.out.println("Coffee");
     }
 }
 
 public class Abstract1 {
     public static void main(String[] args) {
-        W w = new W();
-        w.method();
+        GreenTea gt = new GreenTea();
+        Coffee cf = new Coffee();
+        gt.teaName();
+        cf.teaName();
     }
 }
