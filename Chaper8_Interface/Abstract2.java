@@ -1,4 +1,4 @@
-package Chapter7_OOP2;
+package Chaper8_Interface;
 
 abstract class Car {
     boolean go;
