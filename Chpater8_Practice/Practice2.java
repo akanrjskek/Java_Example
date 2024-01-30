@@ -24,6 +24,7 @@ class Calculator implements Calculable {
         return d1 / d2;
     }
 }
+
 public class Practice2 {
     public static void main(String[] args) {
         Calculable c = new Calculator();
