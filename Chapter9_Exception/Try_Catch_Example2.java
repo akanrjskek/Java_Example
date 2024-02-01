@@ -1,9 +1,6 @@
 package Chapter9_Exception;
 
 import java.lang.ArrayIndexOutOfBoundsException;
-import java.lang.NullPointerException;
-import java.util.Arrays;
-
 
 public class Try_Catch_Example2 {
     public static void main(String[] args) {
