@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args){
-        String s1 = "hello";
-        String s2 = "hello2";
-        s1 = "hello2";
-        System.out.println(s1 == s2);
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Integer.MIN_VALUE);
+        System.out.println(Long.MAX_VALUE);
+        System.out.println(Long.MIN_VALUE);
     }
 }
