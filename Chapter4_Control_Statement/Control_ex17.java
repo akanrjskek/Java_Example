@@ -2,7 +2,7 @@ package Chapter4_Control_Statement;
 
 public class Control_ex17 {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5};
+        int[] arr = {1,3,5,7,9};
         int sum = 0;
         for(int number : arr){
             sum += number;
