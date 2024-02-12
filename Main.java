@@ -1,8 +1,16 @@
+class GenericClass<T>{
+    GenericClass(){}
+
+    public void print(GenericClass<? extends Object> gc){
+        System.out.println("메서드 호출 성공");
+    }
+}
+
+class A{}
+
 public class Main {
     public static void main(String[] args){
-        System.out.println(Integer.MAX_VALUE);
-        System.out.println(Integer.MIN_VALUE);
-        System.out.println(Long.MAX_VALUE);
-        System.out.println(Long.MIN_VALUE);
+        GenericClass<A> a = new GenericClass<>();
+        a.print(a);
     }
 }
