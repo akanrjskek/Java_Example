@@ -1,4 +1,4 @@
-package Chapter11_Collections;
+package Chapter11_Practice;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -30,13 +30,16 @@ class Student{
 
 }
 
-public class HashSet_Example3 {
+public class Practice2 {
     public static void main(String[] args) {
         HashSet<Student> set = new HashSet<>();
-        boolean b1 = set.add(new Student("john",1));
-        boolean b2 = set.add(new Student("john",1));
-        System.out.println(b1);
-        System.out.println(b2);
+        set.add(new Student("john",1));
+        set.add(new Student("Tom",2));
+        set.add(new Student("Kane",3));
+        set.add(new Student("Samuel",4));
+        set.add(new Student("Diane",5));
+        set.add(new Student("Tom",6));
+        set.add(new Student("Kane",7));
         Iterator<Student> I = set.iterator();
         while(I.hasNext()){
             System.out.println(I.next());

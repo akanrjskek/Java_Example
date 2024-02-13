@@ -19,6 +19,5 @@ public class List_Example3 {
 
         list.add(11);
         arr[10] = 11;
-
     }
 }
