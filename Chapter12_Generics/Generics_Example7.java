@@ -10,7 +10,7 @@ class WildCard<T>{
 
 class AA{}
 
-public class Generic_Example7 {
+public class Generics_Example7 {
     public static void main(String[] args){
         WildCard<AA> a = new WildCard<>();
         a.print(a);
