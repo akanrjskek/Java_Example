@@ -2,8 +2,7 @@ package Chapter12_Generics;
 
 class WildCard<T>{
     WildCard(){}
-
-    public void print(WildCard<? extends Object> gc){
+    public static void print(WildCard<? super AA> gc){
         System.out.println("메서드 호출 성공");
     }
 }
