@@ -7,7 +7,7 @@ public class Lambda_Example3 {
     public static void main(String[] args) {
         Supplier<Integer> s = () -> (int)(Math.random() * 100) + 1;
         Consumer<Integer> c = i -> System.out.print(i + ", ");
-        Predicate<Integer> p = i -> i % 2 == 0;
+        Predicate<Integer>  p = i -> i % 2 == 0;
         Function<Integer, Integer> f = i -> i/10*10;
 
         List<Integer> list = new ArrayList<>();
