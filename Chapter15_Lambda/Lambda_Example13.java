@@ -18,7 +18,7 @@ public class Lambda_Example13 {
         System.out.println(a);
 
         IntStream intStream1 = Stream.of(intarr).mapToInt(i -> i);
-        int sum = intStream1.reduce(0, (b,c) -> b + c);f
+        int sum = intStream1.reduce(0, (b,c) -> b + c);
         System.out.println(sum);
-    }1
+    }
 }
