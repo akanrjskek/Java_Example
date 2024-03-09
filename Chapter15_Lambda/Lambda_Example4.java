@@ -1,33 +1,25 @@
 package Chapter15_Lambda;
-
-import java.util.function.Function;
-import java.util.function.Supplier;
-
-class Class{
-    int i;
-
-    Class(int i){
-        this.i = i;
-    }
-}
+import java.util.function.*;
 
 public class Lambda_Example4 {
-    public static void main(String[] args) {
-        //Function<String, Integer> f = (String s) -> Integer.parseInt(s);
-        Function<String, Integer> f = Integer::parseInt;
+    static <T> String randomString(Supplier<T> c){
         StringBuilder sb = new StringBuilder();
-        sb.append("hello ");
-        sb.append("world\n");
-        Supplier<String> func = sb::toString;
-        System.out.println(func.get());
+        int a = (int)(Math.random() * 10) + 1;
+        for(int i = 0; i < a; ++i){
+            sb.append(c.get());
+        }
+        return sb.toString();
+    }
 
-        //Function<Integer, Class> s = (i) -> new Class(i);
-        Function<Integer, Class> s = Class::new;
-        Class c = s.apply(100);
-        System.out.println(c);
+    static <T> void printMethod(Consumer<T> c, T s){
+        c.accept(s);
+    }
 
-        Function<Integer, int[]> arrfunc = int[]::new;
-        int[] arr = arrfunc.apply(100);
-        System.out.println(arr.length);
+    public static void main(String[] args) {
+        Supplier<Character> s = () -> (char)(Math.random() * 26 + 65);
+        Consumer<String> c = ch -> System.out.print(ch);
+        String str = randomString(s);
+        printMethod(c,str);
+
     }
 }

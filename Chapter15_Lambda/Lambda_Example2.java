@@ -18,7 +18,6 @@ public class Lambda_Example2 {
         lc1.print(10);
         lc2.print(10);
         method2((a) -> System.out.println(a * 4));
-
     }
 }
 
