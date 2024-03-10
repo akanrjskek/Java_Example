@@ -8,7 +8,7 @@ public class Wrapper_Example1 {
         Integer i = new Integer("4");
         Long l = new Long("8");
         Float f = new Float("4");
-        Double d = new Double("8.0");
+        Integer d = new Integer("8.0");
         Boolean B = new Boolean(true);
         System.out.println("b = " + b);
         System.out.println("s = " + s);

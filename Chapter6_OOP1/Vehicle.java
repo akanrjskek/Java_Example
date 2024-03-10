@@ -2,7 +2,7 @@ package Chapter6_OOP1;
 
 class Vehicle{
     int speed;
-    double angle;
+    Integer angle;
     char gear;
     static String madein = "America";
 

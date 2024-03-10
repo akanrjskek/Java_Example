@@ -21,7 +21,6 @@ public class Lambda_Example6 {
         List<Integer> iList = Arrays.asList(1,2,3,4,5);
         List<String> sList = Arrays.asList("A","B","C");
         beDouble(f1, iList);
-        beDouble(f2,sList);
-
+        beDouble(f2, sList);
     }
 }
