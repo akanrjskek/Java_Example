@@ -17,6 +17,5 @@ public class BigDecimal_Example2 {
         catch(ArithmeticException e){
             System.out.println("나누어 떨어지지 않습니다.");
         }
-
     }
 }

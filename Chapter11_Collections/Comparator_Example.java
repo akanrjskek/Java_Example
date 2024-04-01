@@ -3,24 +3,12 @@ package Chapter11_Collections;
 import java.util.Arrays;
 import java.util.Comparator;
 
-class P implements Comparable<P> {
+class P{
     int x, y;
 
     P(int x, int y){
         this.x = x;
         this.y = y;
-    }
-
-    public int compareTo(P p) {
-        if(this.x > p.x) {
-            return 1;
-        }
-        else if(this.x == p.x) {
-            if(this.y < p.y) {
-                return 1;
-            }
-        }
-        return -1;
     }
 
     public String toString(){
