@@ -5,7 +5,7 @@ import java.util.Calendar;
 public class Calendar_Example2 {
     public static void main(String[] args) {
         Calendar c = Calendar.getInstance();
-        c.set(2023,1,9,19,15,30);
+        c.set(2024,1,9,19,15,30);
         System.out.println(c.getTime());
         c.set(Calendar.YEAR, 2024);
         System.out.println(c.get(Calendar.YEAR));
